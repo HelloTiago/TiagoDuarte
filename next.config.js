@@ -6,5 +6,10 @@ module.exports = {
     };
 
     return config;
+  },
+  exportPathMap(defaultPathMap) {
+    return {
+      "/": { page: "/" }
+    };
   }
 };

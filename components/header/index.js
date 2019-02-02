@@ -1,11 +1,8 @@
 import React from "react";
 import NextHead from "next/head";
-import Link from "next/link";
 import PropTypes from "prop-types";
 
-import Nav from "./nav";
 import GlobalStyle from "../../global.css";
-import { SubContainer, Logo } from "./header.css";
 
 const defaultDescription = "Hipp";
 const defaultOGURL = "https://hipp.agency";
