@@ -1,9 +1,9 @@
-import React from 'react';
-import App, { Container } from 'next/app';
-import Router from 'next/router';
-import { initGA, logPageView } from '../utils/analytics';
+import React from "react";
+import App, { Container } from "next/app";
+import Router from "next/router";
+import withGA from "next-ga";
 
-export default class MyApp extends App {
+class MyApp extends App {
   static async getInitialProps({ Component, router, ctx }) {
     let pageProps = {};
 
@@ -12,12 +12,6 @@ export default class MyApp extends App {
     }
 
     return { pageProps };
-  }
-
-  componentDidMount() {
-    initGA();
-    logPageView();
-    Router.router.events.on('routeChangeComplete', logPageView);
   }
 
   render() {
@@ -29,3 +23,5 @@ export default class MyApp extends App {
     );
   }
 }
+
+export default withGA("UA-26591280-5", Router)(MyApp);
