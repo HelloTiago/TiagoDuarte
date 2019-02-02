@@ -1,0 +1,30 @@
+{
+  "name": "tiagoduarte",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "export": "next build && next export"
+  },
+  "dependencies": {
+    "babel-loader": "^8.0.5",
+    "babel-plugin-module-resolver": "^3.1.1",
+    "eslint-import-resolver-babel-module": "^4.0.0",
+    "isomorphic-unfetch": "^3.0.0",
+    "next": "^7.0.0",
+    "prop-types": "^15.6.2",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "react-ga": "^2.5.3",
+    "styled-components": "^4.1.3"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "babel-plugin-styled-components": "^1.10.0",
+    "eslint": "^5.12.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-react": "^7.11.1"
+  }
+}
