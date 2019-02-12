@@ -32,7 +32,7 @@ const Index = () => {
             </p>
           </Links>
 
-          <Small>Proper website coming very soon!</Small>
+          <Small>Full website coming very soon!</Small>
         </Intro>
       </div>
     </div>
