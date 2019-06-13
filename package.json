@@ -7,7 +7,7 @@
     "export": "next build && next export"
   },
   "dependencies": {
-    "babel-loader": "^8.0.5",
+    "babel-loader": "^8.0.6",
     "babel-plugin-module-resolver": "^3.1.1",
     "eslint-import-resolver-babel-module": "^4.0.0",
     "isomorphic-unfetch": "^3.0.0",
