@@ -1,27 +1,8 @@
-import React from "react";
-import App, { Container } from "next/app";
-import Router from "next/router";
-import withGA from "next-ga";
+import App from 'next/app'
+import Router from 'next/router'
 
-class MyApp extends App {
-  static async getInitialProps({ Component, router, ctx }) {
-    let pageProps = {};
+import * as gtag from '../lib/gtag'
 
-    if (Component.getInitialProps) {
-      pageProps = await Component.getInitialProps(ctx);
-    }
+Router.events.on('routeChangeComplete', url => gtag.pageview(url))
 
-    return { pageProps };
-  }
-
-  render() {
-    const { Component, pageProps } = this.props;
-    return (
-      <Container>
-        <Component {...pageProps} />
-      </Container>
-    );
-  }
-}
-
-export default withGA("UA-26591280-1", Router)(MyApp);
+export default App

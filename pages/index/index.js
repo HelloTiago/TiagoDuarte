@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "components/header";
-import { Intro, Emoji, Links, Small } from "./index.css";
+import { Intro, Emoji, Links, Small } from "../../styles/index.css";
 
 const Index = () => {
   return (
@@ -16,10 +16,7 @@ const Index = () => {
           </h1>
 
           <p>
-            I love helping startups and small businesses with their online
-            products. I can help you build and launch custom web applications
-            and marketing websites that perform just as well as they look. But
-            enough about me, how can I help you?
+            I’m a Front-end Developer with a passion for building modern and modular user interfaces for the web that give users a great experience. I like great design, scratching my own itch and continuously exploring new things.
           </p>
 
           <Links>
@@ -28,11 +25,9 @@ const Index = () => {
             </p>
             <p>
               <a href="https://twitter.com/HelloTiago">Twitter</a> /{" "}
-              <a href="https://instagram.com/HelloTiago">Instagram</a>
+              <a href="https://github.com/HelloTiago">Github</a>
             </p>
           </Links>
-
-          <Small>Full website coming very soon!</Small>
         </Intro>
       </div>
     </div>
