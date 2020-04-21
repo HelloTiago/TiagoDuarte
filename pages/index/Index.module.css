@@ -32,8 +32,13 @@
 }
 
 .project {
-  display: flex;
   margin-bottom: 40px;
+}
+
+@media (min-width: 950px) {
+  .project {
+    display: flex;
+  }
 }
 
 .projectTitle {
@@ -77,7 +82,14 @@
 }
 
 .projectDescription {
-  margin-left: 56px;
+  margin-top: 24px;
+}
+
+@media (min-width: 950px) {
+  .projectDescription {
+    margin-top: 0;
+    margin-left: 56px;
+  }
 }
 
 .projectAchievements {

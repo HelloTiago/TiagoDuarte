@@ -89,7 +89,13 @@ select {
 
 .container {
   max-width: 905px;
-  margin: 0 auto;
+  margin: 0 24px;
+}
+
+@media (min-width: 950px) {
+  .container {
+    margin: 0 auto;
+  }
 }
 
 @font-face {
