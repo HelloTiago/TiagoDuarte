@@ -48,13 +48,20 @@
 }
 
 .projectImage {
-  min-width: 298px;
-  min-height: 245px;
+  min-width: 100%;
+  min-height: 210px;
   border-radius: 6px;
   box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.2);
   display: grid;
   place-items: center;
   transition: transform 150ms ease-in;
+}
+
+@media (min-width: 950px) {
+  .projectImage {
+    min-width: 298px;
+    min-height: 245px;
+  }
 }
 
 .projectImage:hover {
