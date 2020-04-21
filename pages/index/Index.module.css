@@ -1,0 +1,127 @@
+.intro {
+  margin-top: 142px;
+}
+
+.introHeading {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 48px;
+  margin-bottom: 40px;
+}
+
+.introSecondaryHeading {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 36px;
+  max-width: 612px;
+}
+
+.styleBreak {
+  display: block;
+}
+
+.projects {
+  margin-top: 130px;
+}
+
+.projectsHeading {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 36px;
+  margin-bottom: 40px;
+}
+
+.project {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.projectTitle {
+  font-size: 26px;
+  line-height: 48px;
+  margin-bottom: 20px;
+}
+
+.projectImage {
+  min-width: 298px;
+  min-height: 245px;
+  border-radius: 6px;
+  box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.2);
+  display: grid;
+  place-items: center;
+  transition: transform 150ms ease-in;
+}
+
+.projectImage:hover {
+  transform: translate(5px, -5px);
+}
+
+.projectImagePriceDigests {
+  composes: projectImage;
+  background-color: #00354E;
+}
+
+.projectImageGivepanel {
+  composes: projectImage;
+  background-color: #CB2786;
+}
+
+.projectImageKitewire {
+  composes: projectImage;
+  background-color: #6167C0;
+}
+
+.projectImageEdacy {
+  composes: projectImage;
+  background-color: #61BFAD;
+}
+
+.projectDescription {
+  margin-left: 56px;
+}
+
+.projectAchievements {
+  margin: 0;
+  padding: 0;
+}
+
+.projectAchievements li {
+  font-size: 17px;
+  line-height: 28px;
+  margin-bottom: 12px;
+}
+
+.projectAchievements li:before {
+  content: "\2022"; /* Bullet */
+  color: #D9D9D9;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.contact {
+  margin-top: 120px;
+}
+
+.contactHeading {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 36px;
+  margin-bottom: 22px;
+}
+
+.contactText {
+  line-height: 36px;
+  margin-bottom: 12px;
+}
+
+.contactText a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #2d2d2d;
+}
+
+.footer {
+  margin-top: 100px;
+  margin-bottom: 40px;
+  font-size: 12px;
+}
